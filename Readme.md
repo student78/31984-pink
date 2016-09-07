@@ -1,7 +1,8 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [jully189 Студент](https://up.htmlacademy.ru/adaptive/8/user/31984).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Козлов]
+(https://htmlacademy.ru/profile/id27386)
 
 ---
 
