@@ -8,30 +8,30 @@
   <body>
   	<header class="page-header">
   		<div class="page-header__logo">
-  			<h1>Pink</h1>
-  			<button class="page-header__toggle page-header__toggle--closed" type="button">Закрыть меню</button>
+  			<div class="page-header__title"><a href="/">Pink</a></div>
+  			<button class="page-header__toggle" type="button">Закрыть меню</button>
   		</div>
   		<nav class="main-nav main-nav--closed">
   			<div class="main-nav__wrapper">
   				<ul class="main-nav__list">
-  					<li class="main-nav__item">Главная</li>
-  					<li class="main-nav__item">Фотографии</li>
-  					<li class="main-nav__item">Конкурс</li>
-  					<li class="main-nav__item">HTML Academy</li>
+  					<li class="main-nav__item"><a href="#">Главная</a></li>
+  					<li class="main-nav__item"><a href="#">Фотографии</a></li>
+  					<li class="main-nav__item"><a href="#">Конкурс</a></li>
+  					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
   				</ul>
   			</div>
   		</nav>
-      <span class="page-header__title">Фографии пользователей</span>
+      <h1 class="page-header__title">Фотографии пользователей</h1>
   	</header>
     <main>
-      <section class="photo">
-        <span class="photo__title photo__title--top">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
-        <div class="photo__main">
-          <img src="http://placehold.it/320x135" width="320" height="135">
+      <section class="photos">
+        <span class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
+        <div class="photox__item photox__item--main photo">
+          <img src="http://placehold.it/320x135" width="320" height="135" alt="Панорама дня">
           <div class="photo__legend">Панорама дня</div>
         </div>
-        <div class="photo__wrapper">
-          <div class="photo__item">
+        <div class="photos__wrapper">
+          <div class="photos__item photo">
             <div class="photo__description">
               <div class="photo__author">
                 <span class="photo__author-name">Анна</span>
@@ -45,8 +45,8 @@
               </div>
             </div>
           </div>
-          <div class="photo__item">
-            <img src="http://placehold.it/320x135" width="271" height="180">
+          <div class="photox__item photo">
+            <img src="http://placehold.it/320x135" width="271" height="180" alt="Пользовательское фото">
             <div class="photo__description">
               <div class="photo__author">
                 <span class="photo__author-name">Левон</span>
@@ -60,8 +60,8 @@
               </div>
             </div>
           </div>
-          <div class="photo__item">
-            <img src="http://placehold.it/320x135" width="271" height="180">
+          <div class="photos__item photo">
+            <img src="http://placehold.it/320x135" width="271" height="180" alt="Пользовательское фото">
             <div class="photo__description">
               <div class="photo__author">
                 <span class="photo__author-name">Антон</span>
@@ -75,8 +75,8 @@
               </div>
             </div>
           </div>
-          <div class="photo__item">
-            <img src="http://placehold.it/320x135" width="271" height="180">
+          <div class="photos__item photo">
+            <img src="http://placehold.it/320x135" width="271" height="180" alt="Пользовательское фото">
             <div class="photo__description">
               <div class="photo__author">
                 <span class="photo__author-name">Борис</span>
@@ -90,8 +90,8 @@
               </div>
             </div>
           </div>
-          <div class="photo__item">
-            <img src="http://placehold.it/320x135" width="271" height="180">
+          <div class="photos__item photo">
+            <img src="http://placehold.it/320x135" width="271" height="180" alt="Пользовательское фото">
             <div class="photo__description">
               <div class="photo__author">
                 <span class="photo__author-name">Сергей</span>
@@ -105,8 +105,8 @@
               </div>
             </div>
           </div>
-          <div class="photo__item">
-            <img src="http://placehold.it/320x135" width="271" height="180">
+          <div class="photos__item photo">
+            <img src="http://placehold.it/320x135" width="271" height="180" alt="Пользовательское фото">
             <div class="photo__description">
               <div class="photo__author">
                 <span class="photo__author-name">Максим</span>
@@ -120,8 +120,8 @@
               </div>
             </div>
           </div>
-          <div class="photo__item">
-            <img src="http://placehold.it/320x135" width="271" height="180">
+          <div class="photos__item photo">
+            <img src="http://placehold.it/320x135" width="271" height="180" alt="Пользовательское фото">
             <div class="photo__description">
               <div class="photo__author">
                 <span class="photo__author-name">Надежда</span>
@@ -136,11 +136,11 @@
             </div>
           </div>
         </div>
-        <span class="photo__title photo__title--bottom">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
+        <span class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
       </section>
       <section class="post">
         <div class="post__wrapper">
-          <img src="http://placehold.it/320x375" width="320" height="375">
+          <img src="http://placehold.it/320x375" width="320" height="375" alt="Пользовательское фото">
           <div class="post__functions">
             <button class="post__function post__button--active" type="button">Обрезка</button>
             <button class="post__function" type="button">Цвет</button>
@@ -148,8 +148,8 @@
           </div>
           <input type="range" class="post__range">
           <div class="post__buttons">
-            <a href="#" class="btn post__button post__button--active">Запостить</a>
-            <a href="#" class="btn post__button">Отмена</a>
+            <button class="btn post__buttons post__buttons--active">Запостить</button>
+            <button class="btn post__buttons">Отмена</button>
           </div>
         </div>
       </section>
@@ -159,12 +159,10 @@
         <div class="page-footer__name">
           <a href="" class="page-footer__logo">Pink</a>
         </div>
-        <div class="page-footer__social">
-          <span class="social-links">
-            <a class="socia-link social-link__tw" href="#">Мы в Твиттере</a>
-            <a class="socia-link social-link__fb" href="#">Мы на Facebook</a>
-            <a class="socia-link social-link__yt" href="#">Мы на Youtube</a>
-          </span>
+        <div class="page-footer__social social-links">
+          <a class="socia-link social-link--tw" href="#">Мы в Твиттере</a>
+          <a class="socia-link social-link--fb" href="#">Мы на Facebook</a>
+          <a class="socia-link social-link--yt" href="#">Мы на Youtube</a>
         </div>
         <div class="page-footer__copyright">
           Разработано:

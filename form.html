@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="" rel="stylesheet">
+    <title>Макет Pink</title>
+  </head>
+  <body>
+  	<header class="page-header">
+  		<div class="page-header__logo">
+  			<div class="page-header__title"><a href="/">Pink</a></div>
+  			<button class="page-header__toggle" type="button">Закрыть меню</button>
+  		</div>
+  		<nav class="main-nav main-nav--closed">
+  			<div class="main-nav__wrapper">
+  				<ul class="main-nav__list">
+  					<li class="main-nav__item"><a href="#">Главная</a></li>
+  					<li class="main-nav__item"><a href="#">Фотографии</a></li>
+  					<li class="main-nav__item"><a href="#">Конкурс</a></li>
+  					<li class="main-nav__item"><a href="#">HTML Academy</a></li>
+  				</ul>
+  			</div>
+  		</nav>
+      <span class="page-header__title">Конкурс на самое безбашенное путешествие с ПИНК</span>
+  	</header>
+    <main>
+      <section class="form">
+      <div class="form-title">
+          Поделистесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+        </div>
+      <form class="form__page-form">
+        <div class="form__block form__block--name">
+          <div class="form__wrapper">
+              <label class="form__label form__label--name" for="surname">Фамилия</label>
+              <input type="text" class="form__input form__input--name" name="surname" id="surname">
+              <label class="form__label form__label--name" for="name">Имя</label>
+              <input type="text" class="form__input form__input--name" name="firstname" id="name">
+              <label class="form__label form__label--name" for="fathername">Отчество</label>
+              <input type="text" class="form__input form__input--name" name="fathername" id="fathername">
+          </div>
+        </div>
+        <div class="form__block form__block--advantages">
+          <div class="form__wrapper">
+              <p class="form__title form__title--advantages">Ваши безбашенные достижения в путешествии!</p>
+              <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-1">
+              <label class="form__label form__label--advantages" for="checkbox-1">Сделал селфи с акулой</label>
+              <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-2">
+              <label class="form__label form__label--advantages" for="checkbox-2">Обгорел на пляже</label>
+              <input type="checkbox" class="form__input form__input--advantages" id="checkbox-3">
+              <label class="form__label form__label--advantages" for="checkbox-3">Видел Чака Норриса</label>
+              <input type="checkbox" class="form__input form__input--advantages" id="checkbox-4">
+              <label class="form__label form__label--advantages" for="checkbox-4">Накупил сувениров</label>
+              <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-5">
+              <label class="form__label form__label--advantages" for="checkbox-5">Удержал башню</label>
+              <input type="checkbox" class="form__input form__input--advantages" id="checkbox-6">
+              <label class="form__label form__label--advantages" for="checkbox-6">Разгромил отель</label>
+          </div>
+        </div>
+        <div class="form__block form__block--email">
+          <div class="form__wrapper">
+              <label class="form__label form__label--email" for="tel">Номерок телефончика</label>
+              <input type="tel" class="form__input form__input--email" name="tel" id="tel">
+              <label class="form__label form__label--email" for="email">Адресок почты</label>
+              <input type="text" class="form__input form__input--email" name="email" id="email">
+          </div>
+        </div>
+        <div class="form__block form__block--radio">
+          <div class="form__wrapper">
+              <p class="form__title form__title--radio">С каким приложением путешествовали?</p>
+              <input type="radio" class="from__input input__input--radio" checked id="radio-1">
+              <label class="form__label form__label--radio" for="radio-1">Pink для iOS</label>
+              <input type="radio" class="from__input input__input--radio"  id="radio-2">
+              <label class="form__label form__label--radio" for="radio-2">Pink для Android</label>
+              <input type="radio" class="from__input input__input--radio" id="radio-3">
+              <label class="form__label form__label--radio" for="radio-3">Windows Phone</label>
+          </div>
+        </div>
+        <div class="form__block form__block--textarea">
+          <div class="form__wrapper">
+              <p class="form__title form__title--textarea">Опишите свои эмоции</p>
+              <textarea>
+                Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+          </div>
+        </div>
+        <div class="form__block form__block--submit">
+          <div class="form__wrapper">
+            <button type="submit" class="btn form__btn form__btn--green">Отправить форму</button>
+          </div>
+        </div>
+        <div class="form__notification">
+          <div class="form__wrapper">
+            <span class="form__mark">*</span> &#8211; Обязательные поля
+          </div>
+        </div>
+      </form>
+      </section>
+      <section class="popup">
+        <div class="pupup__block">
+        	<div class="popup__title">Ваша заявка отправлена</div>
+        	<div class="pupup__text">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</div>
+        	<button class="btn pupup__btn pupup__btn--green">Закрыть окно</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__name">
+          <a href="" class="page-footer__logo">Pink</a>
+        </div>
+        <div class="page-footer__social social-links">
+          <a class="socia-link social-link--tw" href="#">Мы в Твиттере</a>
+          <a class="socia-link social-link--fb" href="#">Мы на Facebook</a>
+          <a class="socia-link social-link--yt" href="#">Мы на Youtube</a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано:
+          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
