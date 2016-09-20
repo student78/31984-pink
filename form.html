@@ -77,30 +77,23 @@
         </div>
         <div class="form__block form__block--textarea">
           <div class="form__wrapper">
-              <p class="form__title form__title--textarea">Опишите свои эмоции</p>
-              <textarea>
+              <label class="form__label form__label--textarea" for="textarea">Опишите свои эмоции</p>
+              <textarea name="textarea" id="textarea" placeholder="Ваше сообщение">
                 Можно прям в красках, не стесняясь в выражениях
               </textarea>
           </div>
         </div>
         <div class="form__block form__block--submit">
           <div class="form__wrapper">
-            <button type="submit" class="btn form__btn form__btn--green">Отправить форму</button>
+            <button type="submit" class="btn form__btn btn--green">Отправить форму</button>
           </div>
         </div>
         <div class="form__notification">
           <div class="form__wrapper">
-            <span class="form__mark">*</span> &#8211; Обязательные поля
+            <span class="form__mark">*</span> — Обязательные поля
           </div>
         </div>
       </form>
-      </section>
-      <section class="popup">
-        <div class="pupup__block">
-        	<div class="popup__title">Ваша заявка отправлена</div>
-        	<div class="pupup__text">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</div>
-        	<button class="btn pupup__btn pupup__btn--green">Закрыть окно</button>
-        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -119,4 +112,11 @@
         </div>
       </div>
     </footer>
+    <section class="popup">
+        <div class="pupup__block">
+          <div class="popup__title">Ваша заявка отправлена</div>
+          <div class="pupup__text">Спасибо за участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</div>
+          <button type="button" class="btn pupup__btn pupup__btn--green">Закрыть окно</button>
+        </div>
+      </section>
   </body>

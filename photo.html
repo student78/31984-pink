@@ -26,7 +26,7 @@
     <main>
       <section class="photos">
         <span class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
-        <div class="photox__item photox__item--main photo">
+        <div class="photos__item photo photo--main">
           <img src="http://placehold.it/320x135" width="320" height="135" alt="Панорама дня">
           <div class="photo__legend">Панорама дня</div>
         </div>
@@ -45,7 +45,7 @@
               </div>
             </div>
           </div>
-          <div class="photox__item photo">
+          <div class="photos__item photo">
             <img src="http://placehold.it/320x135" width="271" height="180" alt="Пользовательское фото">
             <div class="photo__description">
               <div class="photo__author">
@@ -142,14 +142,14 @@
         <div class="post__wrapper">
           <img src="http://placehold.it/320x375" width="320" height="375" alt="Пользовательское фото">
           <div class="post__functions">
-            <button class="post__function post__button--active" type="button">Обрезка</button>
+            <button class="post__function post__button post__button--active" type="button">Обрезка</button>
             <button class="post__function" type="button">Цвет</button>
             <button class="post__function" type="button">Яркость</button>
           </div>
           <input type="range" class="post__range">
           <div class="post__buttons">
-            <button class="btn post__buttons post__buttons--active">Запостить</button>
-            <button class="btn post__buttons">Отмена</button>
+            <button type="submit" class="btn post__buttons post__buttons--active">Запостить</button>
+            <button type="reset" class="btn post__buttons">Отмена</button>
           </div>
         </div>
       </section>
