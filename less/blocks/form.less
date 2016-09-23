@@ -1,0 +1,151 @@
+.form{
+  color:@bg-darkblue;
+}
+.form__slogan{
+  .small-title();
+  margin:48px 20px;
+}
+.form__wrapper{
+  .container();
+}
+.form__block--name{
+  padding-bottom:17px;
+}
+.form__block--radio{
+  background-color:@bg-lightgrey;
+  padding-top:32px;
+}
+.form__block--email{
+  padding:30px 0;
+}
+.form__block--comment{
+  padding-top:55px;
+}
+.form__input{
+  width:100%;
+  display:block;
+  margin-bottom:22px;
+  padding:13px 19px;
+  box-sizing:border-box;
+  border:2px solid @bg-darkgrey;
+  border-radius:3px;
+  .font-input();
+
+  &--advantages{
+    display:none;
+  }
+
+  &--radio{
+    display:none;
+  }
+
+  &--comment{
+    height:197px;
+    margin-bottom:44px;
+  }
+}
+.form__title{
+  display:block;
+  font-size:14px;
+  line-height:18px;
+  margin-bottom:10px;
+  text-transform:uppercase;
+  color:@pink;
+
+  &--name{
+    margin-left:21px;
+  }
+
+  &--email{
+    margin-left:21px;
+  }
+
+  &--advantages{
+    text-align:center;
+    margin:0 20px;
+    margin-bottom:42px;
+  }
+
+  &--radio{
+    text-align:center;
+    margin:0 20px;
+    margin-bottom:32px;
+  }
+
+  &--comment{
+    text-align:center;
+    margin-bottom:16px;
+  }
+}
+.form__block--advantages{
+  background-color:@bg-lightgrey;
+  padding-top:34px;
+}
+.form__label{
+  position:relative;
+  display:inline-block;
+  margin-bottom:37px;
+  .font-label();
+
+  &--radio::before{
+    content:"";
+    display:inline-block;
+    width:34px;
+    vertical-align:middle;
+    height:34px;
+    margin-right:29px;
+    border:2px solid @bg-darkgrey;
+    border-radius:50%;
+    background-color:#ffffff;
+  }
+
+  &--advantages::before{
+    content:"";
+    display:inline-block;
+    width:34px;
+    vertical-align:middle;
+    height:34px;
+    margin-right:29px;
+    border:2px solid @bg-darkgrey;
+    background-color:#ffffff;
+  }
+}
+.form__input--radio:checked + .form__label--radio::after{
+  position:absolute;
+  width:14px;
+  height:14px;
+  border-radius:50%;
+  background-color:@pink;
+  content:"";
+  top:12px;
+  left:12px;
+}
+.form__input--advantages:checked + .form__label--advantages::after{
+  position: absolute;
+    top: 10px;
+    left: 9px;
+    width: 26px;
+    height: 20px;
+    content: "";
+    background: url("../img/icon-yes.svg") 0 0 no-repeat;
+}
+.form__btn{
+  .btns();
+  background-color:#2aab6d;
+  color:#ffffff;
+  border:none;
+  width:100%;
+  border-radius:2px;
+  text-transform:uppercase;
+  padding:18px 0;
+  margin-bottom:37px;
+}
+.form__notification{
+  font-size:14px;
+  font-weight:normal;
+  text-transform:uppercase;
+  text-align:center;
+}
+.form__mark{
+  color:@pink;
+}
