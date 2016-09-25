@@ -1,0 +1,72 @@
+.page-header{
+  position:absolute;
+  width:100%;
+  background-color:@bg-darkblue;
+  opacity:0.8;
+}
+.page-header--opened{
+  opacity:1;
+  border-bottom:1px solid #000000;
+  position:relative;
+  margin-bottom:-70px;
+}
+.page-header__logo a{
+  float:left;
+  width:74px;
+  height:30px;
+  background-image:url("../img/logo-pink-white-mobile.svg");
+  background-repeat:no-repeat;
+  background-position:0 50%;
+  font-size:0;
+  cursor:pointer;
+}
+.page-header__wrapper{
+  .container();
+  position:relative;
+  padding:21px 0;
+  .clearfix();
+}
+.page-header__toggle{
+  float:right;
+  width:40px;
+  height:30px;
+  font-size:0;
+  border:none;
+  cursor:pointer;
+  background-color:@bg-darkblue;
+  background-image:url(../img/icon-menu-burger.svg);
+  background-repeat:no-repeat;
+  background-position:100% 50%;
+}
+.page-header__toggle--opened{
+  background-image:url(../img/icon-menu-cross.svg);
+  background-repeat:no-repeat;
+}
+.main-nav{
+  display:none;
+}
+.main-nav--opened{
+  display:block;
+}
+.main-nav__item a{
+  display:block;
+  text-decoration:none;
+  text-align:center;
+  color:#ffffff;
+  font-family:OpenSans;
+  padding:25px 0;
+}
+.main-nav__list{
+  list-style:none;
+  font-weight:bold;
+  font-size:18px;
+  color:white;
+  text-transform:uppercase;
+  margin:0;
+  padding:0;
+}
+.main-nav__item{
+  border-top: 1px solid #55616e;
+  border-bottom:1px solid #000000;
+}
+

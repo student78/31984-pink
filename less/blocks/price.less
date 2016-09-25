@@ -1,0 +1,67 @@
+.price{
+  background-color:#f2f2f2;
+  padding-bottom:45px;
+
+}
+.price__table{
+  width:100%;
+
+}
+.price__empty{
+  width:20px;
+}
+.price__availability{
+  padding:18px 20px;
+}
+.price__availability--true{
+  background:url("../img/icon-yes.svg") no-repeat 90% 50%;
+}
+.price__availability--false{
+  background:url("../img/icon-no.svg") no-repeat 90% 50%;
+}
+td{
+  padding:18px 0px;
+}
+tr:first-child{
+  background-color:@bg-darkblue;
+}
+tr:not(:first-child){
+  background-color:#ffffff;
+  font-size:14px;
+  text-transform:uppercase;
+  font-weight:normal;
+}
+.price__option{
+  font-size:18px;
+  line-height:30px;
+  font-weight:bold;
+  text-transform:uppercase;
+  color:#ffffff;
+}
+.price__value{
+  color:#d4d7da;
+  font-size:24px;
+  line-height:30px;
+  font-weight:light;
+}
+.price__title{
+  position:relative;
+  text-align:center;
+}
+.price__hit{
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  font-size:0px;
+  overflow: hidden;
+  background:url("../img/bg-hit.svg");
+}
+.slider__toggle[for="price-input-2"]{
+  width:6px;
+  height:6px;
+  background-color:#ffffff;
+  border:3px solid black;
+}
