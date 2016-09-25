@@ -1,34 +1,33 @@
 .page-header{
+  position:absolute;
+  width:100%;
   background-color:@bg-darkblue;
-  display:relative;
+  opacity:0.8;
 }
-.page-header--big{
-  height:235px;
-  background-image:url("../img/bg-back-mobile@1x.jpg");
+.page-header--opened{
+  opacity:1;
+  border-bottom:1px solid #000000;
+  position:relative;
+  margin-bottom:-70px;
+}
+.page-header__logo a{
+  float:left;
+  width:74px;
+  height:30px;
+  background-image:url("../img/logo-pink-white-mobile.svg");
   background-repeat:no-repeat;
-  background-position:center top;
-}
-.page-header__logo{
-  padding:21px 0;
-  border-bottom:2px solid black;
-}
-.page-header__logo--small{
-  background-color:rgba(0, 0, 0, 0.2);
-  border-bottom:none;
-  display:absolute;
-  top:0;
-  left:0;
+  background-position:0 50%;
+  font-size:0;
+  cursor:pointer;
 }
 .page-header__wrapper{
   .container();
   position:relative;
+  padding:21px 0;
+  .clearfix();
 }
 .page-header__toggle{
-  position:absolute;
-  top:0;
-  right:0;
-  z-index:2;
-  display:block;
+  float:right;
   width:40px;
   height:30px;
   font-size:0;
@@ -37,17 +36,17 @@
   background-color:@bg-darkblue;
   background-image:url(../img/icon-menu-burger.svg);
   background-repeat:no-repeat;
+  background-position:100% 50%;
 }
 .page-header__toggle--opened{
   background-image:url(../img/icon-menu-cross.svg);
   background-repeat:no-repeat;
 }
-
 .main-nav{
-  background-color:@bg-darkblue;
-}
-.main-nav--closed{
   display:none;
+}
+.main-nav--opened{
+  display:block;
 }
 .main-nav__item a{
   display:block;
@@ -70,11 +69,4 @@
   border-top: 1px solid #55616e;
   border-bottom:1px solid #000000;
 }
-h1{
-  .container();
-  font-size:24px;
-  font-weight:lighter;
-  color:#c4c8cb;
-  text-align:center;
-  vertical-align:middle;
-}
+
