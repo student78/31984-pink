@@ -37,6 +37,11 @@
 
     @media @tablet-widths{
       margin-top:40px;
+      width:38%;
+
+      @media @desktop-widths{
+        width:31%;
+      }
     }
   }
 
@@ -45,7 +50,7 @@
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-around;
-    align-items:flex-start;
+    align-items:center;
   }
 }
 
@@ -64,4 +69,13 @@
     url("../img/icon-map-marker.svg") no-repeat center 70%,
     url("../img/bg-triangle-white-footer.svg") no-repeat center top,
     url("../img/bg-map-mobile@1x.png") no-repeat 50% 50%;
+    background-size:auto, auto, 100%;
+
+    @media @tablet-widths{
+      height:372px;
+    }
+
+    @media @desktop-widths{
+      height:500px;
+    }
 }

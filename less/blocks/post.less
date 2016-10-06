@@ -19,7 +19,7 @@
 .post__filters{
 
   @media @tablet-widths{
-    display:table;
+    display:flex;
   }
 }
 
@@ -34,6 +34,8 @@
   @media @tablet-widths{
     margin-top:0;
     margin-bottom:0;
+    display:flex;
+    flex-direction:column;
   }
 }
 
@@ -69,7 +71,13 @@
 }
 
 .post__ranges{
-  flex-grow:1;
+
+  @media @tablet-widths{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    flex-grow:1;
+  }
 }
 
 .post__range{

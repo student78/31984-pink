@@ -7,29 +7,28 @@
     <title>Форма Pink</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--opened page-header--nojs">
       <div class="page-header__wrapper">
+        <div class="page-header__top">
           <div class="page-header__logo"><a href="/">Pink</a></div>
           <button class="page-header__toggle" type="button">Открыть меню</button>
-      </div>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Главная</a></li>
             <li class="main-nav__item"><a href="#">Фотографии</a></li>
             <li class="main-nav__item"><a href="#">Конкурс</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="page-title page-title--form">
-        <div class="page-title__wrapper">
-          <h1 class="page-title__slogan">Конкурс на самое безбашеное путешествие с Пинк</h1>
-        </div>
-      </section>
+      <section class="page-title page-title--inner">
+          <div class="page-title__wrapper page-title__wrapper--inner">
+            <h1 class="page-title__slogan page-title__slogan--inner">Фотографии <br>пользователей</h1>
+          </div>
+        </section>
       <section class="form">
         <div class="form__slogan">
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
@@ -37,15 +36,15 @@
       <form class="form__page-form">
         <div class="form__block form__block--name">
           <div class="form__wrapper">
-            <div class="form__item">
+            <div class="form__item form__item--name">
               <label class="form__title form__title--name" for="surname">Фамилия</label>
               <input type="text" class="form__input form__input--name" name="surname" id="surname" placeholder="Укажите фамилию" required>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--name">
               <label class="form__title form__title--name" for="name">Имя</label>
               <input type="text" class="form__input form__input--name" name="firstname" id="name" placeholder="Введите ваше имя" required>
             </div>
-            <div class="form__item">
+            <div class="form__item form__item--name">
               <label class="form__title form__title--name" for="fathername">Отчество</label>
               <input type="text" class="form__input form__input--name" name="fathername" id="fathername" placeholder="Ну и отчество тоже">
             </div>
@@ -53,60 +52,92 @@
         </div>
         <div class="form__block form__block--advantages">
           <div class="form__wrapper">
-              <p class="form__title form__title--advantages">Ваши безбашенные достижения в путешествии!</p>
-              <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-1">
-              <label class="form__label form__label--advantages" for="checkbox-1">Сделал селфи с акулой</label>
-              <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-2">
-              <label class="form__label form__label--advantages" for="checkbox-2">Обгорел на пляже</label>
-              <input type="checkbox" class="form__input form__input--advantages" id="checkbox-3">
-              <label class="form__label form__label--advantages" for="checkbox-3">Видел Чака Норриса</label>
-              <input type="checkbox" class="form__input form__input--advantages" id="checkbox-4">
-              <label class="form__label form__label--advantages" for="checkbox-4">Накупил сувениров</label>
-              <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-5">
-              <label class="form__label form__label--advantages" for="checkbox-5">Удержал башню</label>
-              <input type="checkbox" class="form__input form__input--advantages" id="checkbox-6">
-              <label class="form__label form__label--advantages" for="checkbox-6">Разгромил отель</label>
+            <fieldset class="form__fieldset">
+              <legend class="form__title form__title--advantages">Ваши безбашенные достижения в путешествии!</legend>
+              <ul class="form__advantages">
+                <div class="form__item form__item--advantages">
+                <li>
+                <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-1">
+                <label class="form__label form__label--advantages" for="checkbox-1">Сделал селфи с акулой</label>
+                </li>
+                <li>
+                <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-2">
+                <label class="form__label form__label--advantages" for="checkbox-2">Обгорел на пляже</label>
+                </li>
+                </div>
+                <div class="form__item form__item--advantages">
+                <li>
+                <input type="checkbox" class="form__input form__input--advantages" id="checkbox-3">
+                <label class="form__label form__label--advantages" for="checkbox-3">Видел Чака Норриса</label>
+                </li>
+                <li>
+                <input type="checkbox" class="form__input form__input--advantages" id="checkbox-4">
+                <label class="form__label form__label--advantages" for="checkbox-4">Накупил сувениров</label>
+                </li>
+                </div>
+                <div class="form__item form__item--advantages">
+                <li>
+                <input type="checkbox" checked class="form__input form__input--advantages" id="checkbox-5">
+                <label class="form__label form__label--advantages" for="checkbox-5">Удержал башню</label>
+                </li>
+                <li>
+                <input type="checkbox" class="form__input form__input--advantages" id="checkbox-6">
+                <label class="form__label form__label--advantages" for="checkbox-6">Разгромил отель</label>
+                </li>
+                </div>
+              </ul>
+            </fieldset>
           </div>
         </div>
         <div class="form__block form__block--email">
           <div class="form__wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="form__title form__title--empty">Контактная информация</legend>
+              <div class="form__item form__item--email">
               <label class="form__title form__title--email" for="tel">Номерок телефончика</label>
               <input type="tel" class="form__input form__input--email" name="tel" id="tel" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="form__item form__item--email">
               <label class="form__title form__title--email" for="tel" for="email">Адресок почты</label>
               <input type="text" class="form__input form__input--email" name="email" id="email" placeholder="Введите почту">
+              </div>
+            </fieldset>
           </div>
         </div>
         <div class="form__block form__block--radio">
           <div class="form__wrapper">
-              <p class="form__title form__title--radio">С каким приложением путешествовали?</p>
+            <fieldset class="form__fieldset">
+              <legend class="form__title form__title--radio">С каким приложением путешествовали?</legend>
               <input type="radio" class="from__input form__input--radio" checked id="radio-1">
               <label class="form__label form__label--radio" for="radio-1">Pink для iOS</label>
               <input type="radio" class="from__input form__input--radio"  id="radio-2">
               <label class="form__label form__label--radio" for="radio-2">Pink для Android</label>
               <input type="radio" class="from__input form__input--radio" id="radio-3">
               <label class="form__label form__label--radio" for="radio-3">Windows Phone</label>
+            </fieldset>
           </div>
         </div>
         <div class="form__block form__block--comment">
           <div class="form__wrapper">
-              <label class="form__title form__title--comment" for="comment">Опишите свои эмоции</label>
+            <fieldset class="form__fieldset">
+
+              <legend class="form__title form__title--comment" for="comment">Опишите свои эмоции</legend>
               <input class="form__input form__input--comment" type="text" name="comment" id="comment" placeholder="Можно прям в карсках, не стесняясь в выражениях">
+            </fieldset>
           </div>
         </div>
         <div class="form__block form__block--submit">
           <div class="form__wrapper">
             <button type="submit" class="btn form__btn btn--green">Отправить форму</button>
-          </div>
-        </div>
-        <div class="form__notification">
-          <div class="form__wrapper">
-            <span class="form__mark">*</span> — Обязательные поля
+            <div class="form__notification">
+              <span class="form__mark">*</span> — Обязательные поля
+            </div>
           </div>
         </div>
       </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--main">
       <div class="page-footer__wrapper">
         <div class="page-footer__name">
           <a href="/" class="page-footer__logo">Pink</a>
@@ -117,11 +148,28 @@
           <a class="social-link social-link--yt" href="#">Мы на Youtube</a>
         </div>
         <div class="page-footer__copyright">
-          Разработано
+          <div class="page-footer__copyright-text">Разработано</div>
           <a href="#" class="page-footer__copyright-link">HTML Academy</a>
         </div>
       </div>
     </footer>
+
+    <script>
+    var navMain = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__toggle');
+
+    navMain.classList.remove('page-header--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('page-header--closed')) {
+        navMain.classList.remove('page-header--closed');
+        navMain.classList.add('page-header--opened');
+      } else {
+        navMain.classList.add('page-header--closed');
+        navMain.classList.remove('page-header--opened');
+      }
+    });
+    </script>
 
     <section class="popup popup--failure">
         <div class="form__wrapper">
@@ -143,4 +191,3 @@
     </section>
   </body>
 </html>
-

@@ -1,12 +1,14 @@
 .form{
   color:@bg-darkblue;
 }
+
 .form__slogan{
   text-align:center;
   font-size:14px;
   line-height:30px;
   margin:44px 20px;
 }
+
 .form__wrapper{
   .container();
 }
@@ -23,6 +25,28 @@
 .form__block--comment{
   padding-top:55px;
 }
+
+.form__item{
+
+  &--name{
+
+    @media @tablet-widths{
+      display:flex;
+      flex-direction:row;
+      justify-content:space-between;
+      align-items:center;
+    }
+  }
+
+  &--email{
+
+    @media @tablet-widths{
+      display:flex;
+      flex-direction:column-reverse;
+    }
+  }
+}
+
 .form__input{
   width:100%;
   display:block;
@@ -34,6 +58,16 @@
   font-size:18px;
   line-height:30px;
   color:@bg-darkblue;
+
+  &--name{
+    @media @tablet-widths{
+      margin-left:24px;
+    }
+
+    @media @desktop-widths{
+      margin-left:13px;
+    }
+  }
 
   &--advantages{
     display:none;
@@ -47,6 +81,14 @@
     height:197px;
     margin-bottom:44px;
   }
+
+  &--email{
+    @media @tablet-widths{
+      background-color:@bg-darkgrey;
+      background-size:10%;
+      background-position:90%;
+    }
+  }
 }
 .form__title{
   display:block;
@@ -58,10 +100,22 @@
 
   &--name{
     margin-left:21px;
+
+    @media @tablet-widths{
+      margin-left:0;
+    }
   }
 
-  &--email{
+    &--email{
     margin-left:21px;
+  }
+
+  &--empty{
+    display:none;
+
+    @media @tablet-widths{
+      display:block;
+    }
   }
 
   &--advantages{
@@ -85,9 +139,34 @@
   background-color:@bg-lightgrey;
   padding-top:34px;
 }
+
+.form__fieldset{
+  padding:0;
+  border:none;
+
+  @media @tablet-widths{
+    padding:39px 51px;
+    border:1px solid @bg-darkgrey;
+  }
+}
+
+.form__advantages{
+  list-style:none;
+
+  @media @desktop-widths{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+  }
+
+  li{
+    width:auto;
+  }
+}
 .form__label{
   position:relative;
-  display:inline-block;
+  display:block;
   margin-bottom:37px;
   font-size:18px;
   font-weight:normal;
@@ -136,7 +215,7 @@
     background: url("../img/icon-yes.svg") 0 0 no-repeat;
 }
 .form__btn{
-  display:block;
+  display:inline-block;
   padding:15px 0;
   text-decoration:none;
   font-size:18px;
@@ -151,12 +230,22 @@
   text-transform:uppercase;
   padding:18px 0;
   margin-bottom:37px;
+
+  @media @tablet-widths{
+    width:48.1%;
+  }
 }
 .form__notification{
+  display:inline-block;
   font-size:14px;
   font-weight:normal;
   text-transform:uppercase;
-  text-align:center;
+  width:51%;
+  border:1px solid red;
+
+  @media @tablet-widths{
+    text-align:right;
+  }
 }
 .form__mark{
   color:@pink;

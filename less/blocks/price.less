@@ -15,13 +15,14 @@
   }
 
   &__table{
-    width:1120px;
+    width:264%;
     font-size:14px;
     font-weight:normal;
+    transform:translateX(-31%);
 
     @media @tablet-widths{
-      .container();
       width:100%;
+      transform:none;
     }
 
   }
@@ -84,6 +85,14 @@
     }
   }
 
+}
+
+td:first-child{
+  display:none;
+
+  @media @tablet-widths{
+    display:block;
+  }
 }
 
 tr:not(:first-child){
