@@ -2,7 +2,9 @@
   color:@bg-darkblue;
 }
 .form__slogan{
-  .small-title();
+  text-align:center;
+  font-size:14px;
+  line-height:30px;
   margin:44px 20px;
 }
 .form__wrapper{
@@ -29,7 +31,9 @@
   box-sizing:border-box;
   border:2px solid @bg-darkgrey;
   border-radius:3px;
-  .font-input();
+  font-size:18px;
+  line-height:30px;
+  color:@bg-darkblue;
 
   &--advantages{
     display:none;
@@ -85,7 +89,9 @@
   position:relative;
   display:inline-block;
   margin-bottom:37px;
-  .font-label();
+  font-size:18px;
+  font-weight:normal;
+  line-height:30px;
 
   &--radio::before{
     content:"";
@@ -96,7 +102,7 @@
     margin-right:29px;
     border:2px solid @bg-darkgrey;
     border-radius:50%;
-    background-color:#ffffff;
+    background-color:@white;
   }
 
   &--advantages::before{
@@ -107,7 +113,7 @@
     height:34px;
     margin-right:29px;
     border:2px solid @bg-darkgrey;
-    background-color:#ffffff;
+    background-color:@white;
   }
 }
 .form__input--radio:checked + .form__label--radio::after{
@@ -130,9 +136,15 @@
     background: url("../img/icon-yes.svg") 0 0 no-repeat;
 }
 .form__btn{
-  .btns();
+  display:block;
+  padding:15px 0;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:bold;
+  text-align:center;
+  border-radius:50px;
   background-color:#2aab6d;
-  color:#ffffff;
+  color:@white;
   border:none;
   width:100%;
   border-radius:2px;

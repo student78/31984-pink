@@ -1,0 +1,67 @@
+.contacts__wrapper{
+  .container();
+}
+
+.contacts__question{
+  text-align:center;
+  color:@bg-darkblue;
+  font-size:24px;
+  line-height:auto;
+  font-weight:lighter;
+  padding-top:45px;
+  padding-bottom:17px;
+
+  @media @tablet-widths{
+    font-size:40px;
+    padding-top:55px;
+    padding-bottom:0;
+  }
+
+  @media @desktop-widths{
+    font-size:50px;
+    padding-top:65px;
+  }
+}
+
+.contacts__list{
+  list-style:none;
+  text-align:center;
+  padding:0;
+
+  a{
+    text-decoration:none;
+  }
+
+  li{
+    margin-top:23px;
+
+    @media @tablet-widths{
+      margin-top:40px;
+    }
+  }
+
+  @media @tablet-widths{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:flex-start;
+  }
+}
+
+.contacts__action{
+  font-size:18px;
+  font-weight:bold;
+}
+.contacts__item a{
+  font-size:24px;
+  color:@pink;
+  font-weight:lighter;
+}
+.contacts__map{
+  height:190px;
+  background:
+    url("../img/icon-map-marker.svg") no-repeat center 70%,
+    url("../img/bg-triangle-white-footer.svg") no-repeat center top,
+    url("../img/bg-map-mobile@1x.png") no-repeat 50% 50%;
+}
