@@ -2,52 +2,55 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600&amp;subset=latin,cyrillic">
     <title>Макет Pink</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--opened page-header--nojs">
       <div class="page-header__wrapper">
+        <div class="page-header__top">
           <div class="page-header__logo"><a href="/">Pink</a></div>
           <button class="page-header__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Главная</a></li>
             <li class="main-nav__item"><a href="#">Фотографии</a></li>
             <li class="main-nav__item"><a href="#">Конкурс</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="page-title page-title__main">
-        <div class="page-title__wrapper">
-
-        </div>
-      </section>
-      <section class="download">
-        <div class="download__contents">
-          <a href="#" class="btn download__btn">Скачать приложение</a>
-          <div class="download__list">
-            <a href="#" class="download__icon download__icon--apple">Apple</a>
-            <a href="#" class="download__icon download__icon--android">Android</a>
-            <a href="#" class="download__icon download__icon--windows">Windows</a>
-          </div>
-          <div class="download__text">
-            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </div>
+      <section class="presentation presentation--main">
+        <div class="presentation__wrapper presentation__wrapper--main">
+          <section class="page-title page-title--main">
+            <div class="page-title__wrapper">
+              <h1 class="page-title__slogan page-title__slogan--main">Взгляните на жизнь иначе!</h1>
+            </div>
+          </section>
+          <section class="download">
+            <div class="download__contents">
+              <a href="#" class="btn download__btn">Скачать приложение</a>
+              <div class="download__list">
+                <a href="#" class="download__icon download__icon--apple">Apple</a>
+                <a href="#" class="download__icon download__icon--android">Android</a>
+                <a href="#" class="download__icon download__icon--windows">Windows</a>
+              </div>
+              <div class="download__text">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </div>
+            </div>
+          </section>
         </div>
       </section>
       <section class="promo">
         <div class="promo__beginning">
-          <div class="promo__wrapper">
-            <p class="promo__text">Устали от серости мегаполиса</p>
+            <p class="promo__text">Устали от серости мегаполиса?</p>
             <p class="promo__text">Нам есть, что вам предложить!</p>
-          </div>
         </div>
         <div class="promo__options">
           <div class="promo__wrapper">
@@ -65,9 +68,25 @@
                 <div class="promo__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</div>
               </li>
             </ul>
-            <div class="promo__image"></div>
+            <div class="promo__images">
+              <div class="promo__image promo__image--1"></div>
+              <div class="promo__image promo__image--2"></div>
+              <div class="promo__image promo__image--3"></div>
+            </div>
               <!--<img src="img/iphone-screen-mobile@1x.png" width="" height="" alt="Промо фото">-->
 
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <div class="result__wrapper">
+          <div class="result__image">
+            Эффект за 24 часа!
+          </div>
+          <div class="result__text">
+            <div class="result__title">Эффект на 24 часа!</div>
+            <div class="result__description">Британские ученые провели исследования и доказали, что пложительный эффект от использования приложения длится целые сутки!</div>
+            <a href="#" class="result__link">Узнать больше об исследовании</a>
           </div>
         </div>
       </section>
@@ -82,6 +101,7 @@
             <blockquote  class="reviews__item slider__item">
               <cite class="reviews__title">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <p class="reviews__person">25 лет, водитель трамвая</p>
             </blockquote >
           </div>
           <div class="reviews__toggles slider__toggles">
@@ -103,26 +123,36 @@
               <tr>
                 <td class="price__title price__empty"></td>
                 <td class="price__title price__availability">
+                  <div class="price__option">База</div>
+                  <div class="price__value">1,99 USD</div>
+                </td>
+                <td class="price__title price__availability">
                   <div class="price__hit">Хит</div>
                   <div class="price__option">Стандарт</div>
                   <div class="price__value">3,99 USD</div>
                 </td>
-                <td class="price__title price__title--empty"></td>
+                <td class="price__title price__availability">
+                  <div class="price__option">Анлим</div>
+                  <div class="price__value">9,99 USD</div>
+                </td>
               </tr>
               <tr>
-                <td class="price__empty"></td>
+                <td class="price__availability">Розовый фильтр</td>
                 <td class="price__availability price__availability--true">Розовый фильтр</td>
-                <td class="price__empty"></td>
+                <td class="price__availability price__availability--true">Розовый фильтр</td>
+                <td class="price__availability price__availability--true">Розовый фильтр</td>
               </tr>
               <tr>
-                <td class="price__empty"></td>
+                <td class="price__availability">Смайлики</td>
+                <td class="price__availability price__availability--false">Смайлики</td>
                 <td class="price__availability price__availability--true">Смайлики</td>
-                <td class="price__empty"></td>
+                <td class="price__availability price__availability--true">Смайлики</td>
               </tr>
               <tr>
-                <td class="price__empty"></td>
+                <td class="price__availability">Комментарии</td>
                 <td class="price__availability price__availability--false">Комментарии</td>
-                <td class="price__empty"></td>
+                <td class="price__availability price__availability--false">Комментарии</td>
+                <td class="price__availability price__availability--true">Комментарии</td>
               </tr>
             </table>
           </div>
@@ -133,28 +163,61 @@
           </div>
         </div>
       </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <div class="contacts__question">
+            <div>Остались вопросы?</div>
+            <div>Свяжитесь с нами!</div>
+          </div>
+          <ul class="contacts__list">
+            <li>
+              <div class="contacts__action">Звоните:</div>
+              <div class="contacts__item contacts__item--tel"><a href="tel:+78125556666">+7 (812) 555-66-66</a></div>
+            </li>
+            <li>
+              <div class="contacts__action">Пишите:</div>
+              <div class="contacts__item contacts__item--email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
+            </li>
+            <li>
+              <div class="contacts__action">Приезжайте в гости:</div>
+              <div class="contacts__item contacts__item--address"><a href="#">ул. Большая <br>Конюшенная, 19/8</a></div>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map"></div>
+      </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--main">
       <div class="page-footer__wrapper">
-        <p class="page-footer__question">Остались вопросы? Свяжитесь с нами!</p>
-        <ul class="page-footer__contacts-list">
-          <li>
-            <div class="page-footer__action">Звоните:</div>
-            <div class="page-footer__contact page-footer__contact--tel"><a href="tel:+78125556666">+7 (812) 555-66-66</a></div>
-          </li>
-          <li>
-            <div class="page-footer__action">Пишите:</div>
-            <div class="page-footer__contact page-footer__contact--email"><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></div>
-          </li>
-          <li>
-            <div class="page-footer__action">Приезжайте в гости:</div>
-            <div class="page-footer__contact page-footer__contact--address"><a href="#">ул. Большая Конюшенная, 19/8</a></div>
-          </li>
-        </ul>
+        <div class="page-footer__name">
+          <a href="/" class="page-footer__logo">Pink</a>
         </div>
-        <div class="page-footer__map">
-          <!--<img src="http://placehold.it/320x190" width="320" height="190" alt="Карта">-->
+        <div class="page-footer__social social-links">
+          <a class="social-link social-link--tw" href="#">Мы в Твиттере</a>
+          <a class="social-link social-link--fb" href="#">Мы на Facebook</a>
+          <a class="social-link social-link--yt" href="#">Мы на Youtube</a>
         </div>
+        <div class="page-footer__copyright">
+          <div class="page-footer__copyright-text">Разработано</div>
+          <a href="#" class="page-footer__copyright-link">HTML Academy</a>
+        </div>
+      </div>
     </footer>
+    <script>
+    var navMain = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__toggle');
+
+    navMain.classList.remove('page-header--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('page-header--closed')) {
+        navMain.classList.remove('page-header--closed');
+        navMain.classList.add('page-header--opened');
+      } else {
+        navMain.classList.add('page-header--closed');
+        navMain.classList.remove('page-header--opened');
+      }
+    });
+  </script>
   </body>
 </html>

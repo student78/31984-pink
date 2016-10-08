@@ -1,6 +1,4 @@
-.photos{
 
-}
 .photos__title{
   display:block;
   .container();
@@ -10,36 +8,112 @@
   text-align:center;
   line-height:30px;
   box-sizing:border-box;
+
+  @media @tablet-widths{
+    font-size:18px;
+    padding:85px 65px 70px;
+  }
+
+  @media @desktop-widths{
+    padding:85px 180px 70px;
+  }
 }
 .photo{
   position:relative;
-  background-color:@bg-lightgrey;
   margin-bottom:21px;
 }
 .photo--main{
-  margin-bottom:0;
+  margin-bottom:21px;
+
+  @media @tablet-widths{
+    margin-bottom:50px;
+  }
+
+  img{
+    width:100%;
+    display:block;
+  }
 }
+
 .photo__legend{
   font-size:12px;
   text-transform:uppercase;
-  color:#ffffff;
+  color:@white;
   position:absolute;
   top:0;
-  right:20px;
-  background-color:#d22856;
+  background-color:@pink;
   padding:10px 15px;
+  border:1px solid blue;
+}
+
+.photo__block{
+  .container();
+  display:flex;
+  flex-direction:row-reverse;
 }
 .photos__wrapper{
   .container();
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content:center;
+
+    @media @tablet-widths{
+    justify-content:space-between;
+  }
 }
+
+  .photo__wrapper{
+    .container();
+    background-color:@bg-lightgrey;
+}
+
+.photos__item{
+  border:1px solid blue;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  background-color:@bg-lightgrey;
+
+  @media @tablet-widths{
+    width:48.36%;
+  }
+
+  @media @desktop-widths{
+    width:31.91%
+  }
+
+}
+
+.photos__item img{
+  width:100%;
+
+  @media @tablet-widths{
+
+  }
+
+  @media @desktop-widths{
+    height:400px;
+  }
+}
+
 .photo__description{
   padding:20px 15px;
+  display:flex;
+  flex-direction:column;
+  border:1px solid red;
+  flex-grow:1;
+
+  @media @tablet-widths{
+    padding:30px 25px;
+  }
+}
+
+.photo__comment{
   font-size:12px;
-  line-height:20px;
+  line-height:24px;
 }
-.photo__author{
-  margin-bottom:-10px;
-}
+
 .photo__author-name{
   font-weight:bold;
   font-size:13px;
@@ -50,15 +124,30 @@
   font-size:10px;
 }
 .photo__likes{
-  position:relative;
-  padding-left:30px;
   font-size:10px;
   text-transform:uppercase;
-  color:#d22856;
+  color:@pink;
+  margin-top:auto;
+  display:flex;
+  flex-direction:row;
+
+
+  @media @tablet-widths{
+    padding-left:0;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+  }
 }
-.photo__popularity::before{
-  position:absolute;
+.photo__heart{
   width:15px;
   height:15px;
   background-image:url("../img/icon-heart.svg");
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  margin-right:10px;
+
+  @media @tablet-widths{
+    margin-right:0;
+
+  }
 }

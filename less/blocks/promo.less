@@ -1,10 +1,19 @@
 .promo__beginning{
-  background-color:#ffffff;
-  padding:35px 0;
+  .container();
+  background-color:@white;
+  padding:30px 0;
+
+  @media @tablet-widths{
+    padding:40px 0;
+  }
+
+  @media @desktop-widths{
+    padding:55px 0
+  }
 }
 .promo__options{
   padding-top:50px;
-  background-color:#f2f2f2;
+  background-color:@bg-lightgrey;
   background-image:url("../img/bg-triangle-white.svg");
   background-repeat:no-repeat;
   background-position:center -30px;
@@ -13,32 +22,133 @@
 }
 .promo__wrapper{
   .container();
+
+  @media @tablet-widths{
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+  }
+
+  @media @desktop-widths{
+    flex-direction:column-reverse;
+
+  }
 }
 .promo__text{
-  .big-title();
+  text-align:center;
+  color:#283645;
+  font-size:24px;
+  font-weight:lighter;
+  margin:0 auto;
+
+  @media @tablet-widths{
+    font-size:40px;
+  }
+
+  @media @desktop-widths{
+    font-size:50px;
+  }
 }
+
+.promo__text:last-child{
+    max-width:450px;
+}
+
 .promo__list{
   list-style:none;
   margin:0px;
   padding:0px;
   text-align:center;
+
+  @media @tablet-widths{
+    margin-left:40px;
+    text-align:left;
+  }
+
+  @media @desktop-widths{
+    margin-left:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    text-align:center;
+  }
 }
 .promo__item{
   margin-bottom:35px;
+  @media @desktop-widths{
+    width:247px;
+  }
 }
 .promo__title{
-  .middle-title();
+  font-size:18px;
+  font-weight:bold;
   margin-bottom:16px;
+
+  @media @desktop-widths{
+    font-size:30px;
+  }
 }
 .promo__description{
   font-size:14px;
   font-weight:normal;
   line-height:24px;
+
+  @media @desktop-widths{
+    font-size:18px;
+  }
+}
+
+.promo__images{
+
+  @media @tablet-widths{
+  }
+
+  @media @desktop-widths{
+    margin:0 40px;
+    margin-bottom:55px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
 }
 .promo__image{
   margin:0 auto;
   width:160px;
   height:278px;
   font-size:0;
+  margin-bottom:0px;
+
+  /*@media @tablet-widths{
+    width:267px;
+    height:482px;*/
+
+  @media @tablet-widths{
+    margin:0;
+  }
+
+  &--1{
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  display:none;
+
+    @media @desktop-widths{
+      display:block;
+    }
+
+  }
+
+  &--2{
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  display:none;
+
+    @media @desktop-widths{
+      display:block;
+    }
+
+  }
+
+  &--3{
+  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+
+  }
+
 }

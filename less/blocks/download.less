@@ -1,22 +1,40 @@
 .download{
   background-color:#1d2631;
 
+  @media @tablet-widths{
+    background:none;
+  }
+
 }
 .download__contents{
   .container();
   padding:25px 0;
+
+  @media @tablet-widths{
+    width:300px;
+  }
 }
 .download__btn{
-  .btns();
-  color:#ffffff;
-  border:3px solid #ffffff;
+  display:block;
+  padding:15px 0;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:bold;
+  text-align:center;
+  border-radius:50px;
+  color:@white;
+  border:3px solid @white;
 }
 .download__list{
   margin:27px auto;
   text-align:center;
 }
 .download__icon{
-  .btn-icon();
+  display:inline-block;
+  font-size:0;
+  width:50px;
+  height:55px;
+  margin-right:27px;
 }
 .download__icon--apple{
   background:url("../img/logo-apple.svg") no-repeat 50% 50%;

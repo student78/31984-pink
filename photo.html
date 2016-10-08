@@ -2,54 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600&amp;subset=latin,cyrillic">
     <title>Макет Pink-Фотографии</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--opened page-header--nojs">
       <div class="page-header__wrapper">
+        <div class="page-header__top">
           <div class="page-header__logo"><a href="/">Pink</a></div>
           <button class="page-header__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Главная</a></li>
             <li class="main-nav__item"><a href="#">Фотографии</a></li>
             <li class="main-nav__item"><a href="#">Конкурс</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="page-title page-title__photo">
-        <div class="page-title__wrapper">
-          <h1 class="page-header__title">Фотографии пользователей</h1>
-        </div>
+        <section class="page-title page-title--inner">
+          <div class="page-title__wrapper page-title__wrapper--inner">
+            <h1 class="page-title__slogan page-title__slogan--inner">Фотографии <br>пользователей</h1>
+          </div>
+        </section>
       </section>
       <section class="photos">
         <span class="photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</span>
-        <div class="photos__item photo photo--main">
-          <img src="img/panorama-mobile@1x.jpg" width="320" height="135" alt="Панорама дня">
-          <div class="photo__legend">Панорама дня</div>
-        </div>
-        <div class="photos__wrapper">
-          <div class="photos__item photo">
-            <div class="photo__description">
-              <div class="photo__author">
-                <span class="photo__author-name">Анна</span>
-                <time datetime="">(5 минут назад)</time>
-              </div>
-              <div class="photo_comment">
-                <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              </div>
-              <div class="photo__likes">
-                <div class="photo__popularity">Нравится: 215</div>
+          <div class="photo photo--main">
+            <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
+            <div class="photo__block">
+              <div class="photo__legend">Панорама дня</div>
+            </div>
+            <div class="photo__wrapper">
+
+              <div class="photo__description">
+                <div class="photo__author">
+                  <span class="photo__author-name">Анна</span>
+                  <time datetime="">(5 минут назад)</time>
+                </div>
+                <div class="photo__comment">
+                  <p>Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                </div>
+                <div class="photo__likes">
+                  <div class="photo__heart"></div>
+                  <div class="photo__popularity">Нравится: 215</div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="photos__wrapper">
           <div class="photos__item photo">
             <img src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Пользовательское фото">
             <div class="photo__description">
@@ -57,11 +63,12 @@
                 <span class="photo__author-name">Левон</span>
                 <time datetime="">(5 часов назад)</time>
               </div>
-              <div class="photo_comment">
+              <div class="photo__comment">
                 <p>Вчера он на луну летал, сегодня в руки к нам попал.</p>
               </div>
               <div class="photo__likes">
-                Нравится: 356
+                <div class="photo__heart"></div>
+                <div class="photo__popularity">Нравится: 356</div>
               </div>
             </div>
           </div>
@@ -72,11 +79,12 @@
                 <span class="photo__author-name">Антон</span>
                 <time datetime="">(12 часов назад)</time>
               </div>
-              <div class="photo_comment">
+              <div class="photo__comment">
                 <p>Соседи будут рады!</p>
               </div>
               <div class="photo__likes">
-                Нравится: 666
+                <div class="photo__heart"></div>
+                <div class="photo__popularity">Нравится: 666</div>
               </div>
             </div>
           </div>
@@ -87,11 +95,12 @@
                 <span class="photo__author-name">Борис</span>
                 <time datetime="">(20 часов назад)</time>
               </div>
-              <div class="photo_comment">
+              <div class="photo__comment">
                 <p>Здесь могла быть ваша цитата о высоком и вечном.</p>
               </div>
               <div class="photo__likes">
-                Нравится: 215
+                <div class="photo__heart"></div>
+                <div class="photo__popularity">Нравится: 215</div>
               </div>
             </div>
           </div>
@@ -102,11 +111,12 @@
                 <span class="photo__author-name">Сергей</span>
                 <time datetime="">(25 часов назад)</time>
               </div>
-              <div class="photo_comment">
+              <div class="photo__comment">
                 <p>Самая кубанская в мире!</p>
               </div>
               <div class="photo__likes">
-                Нравится: 4
+                <div class="photo__heart"></div>
+                <div class="photo__popularity">Нравится: 6</div>
               </div>
             </div>
           </div>
@@ -117,11 +127,12 @@
                 <span class="photo__author-name">Максим</span>
                 <time datetime="">(40 часов назад)</time>
               </div>
-              <div class="photo_comment">
+              <div class="photo__comment">
                 <p>Где снег-то?</p>
               </div>
               <div class="photo__likes">
-                Нравится: 150
+                <div class="photo__heart"></div>
+                <div class="photo__popularity">Нравится: 150</div>
               </div>
             </div>
           </div>
@@ -132,41 +143,54 @@
                 <span class="photo__author-name">Надежда</span>
                 <time datetime="">(45 часов назад)</time>
               </div>
-              <div class="photo_comment">
+              <div class="photo__comment">
                 <p>Всем GM и взаимные лайки!</p>
               </div>
               <div class="photo__likes">
-                Нравится: 2560
+                <div class="photo__heart"></div>
+                <div class="photo__popularity">Нравится: 2560</div>
               </div>
             </div>
           </div>
         </div>
-        <span class="photos__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</span>
+        <span class="photos__title">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</span>
       </section>
       <section class="post">
-        <div class="post__block">
-          <div class="post__wrapper">
-            <img src="img/photo-7-mobile@1x.jpg" width="280" height="372" alt="Пользовательское фото">
-            <div class="post__functions">
-              <button class="post__function post__button--active" type="button">Обрезка</button>
-              <button class="post__function" type="button">Цвет</button>
-              <button class="post__function" type="button">Яркость</button>
-            </div>
-            <div class="post__range">
-              <div class="post__scale"></div>
-              <div class="post__toggle"></div>
-            </div>
-          </div>
-        </div>
         <div class="post__wrapper">
-          <div class="post__buttons">
-            <a href="#" class="btn post__btn post__btn--active">Запостить</a>
-            <a href="#" class="btn post__btn">Отмена</a>
+          <div class="post__image">
+            <img src="img/photo-7-mobile@1x.jpg" width="280" height="372" alt="Пользовательское фото">
+          </div>
+            <div class="post__btns">
+            <div class="post__filters">
+              <div class="post__functions">
+                <div class="post__function post__button--active">Обрезка</div>
+                <div class="post__function">Цвет</div>
+                <div class="post__function">Яркость</div>
+              </div>
+              <div class="post__ranges">
+                <div class="post__range post__range--1">
+                  <div class="post__scale"></div>
+                  <div class="post__toggle post__toggle--1"></div>
+                </div>
+                <div class="post__range post__range--2">
+                  <div class="post__scale"></div>
+                  <div class="post__toggle post__toggle--2"></div>
+                </div>
+                <div class="post__range post__range--3">
+                  <div class="post__scale"></div>
+                  <div class="post__toggle post__toggle--3"></div>
+                </div>
+              </div>
+              </div>
+              <div class="post__buttons">
+                <a href="#" class="btn post__btn post__btn--active">Запостить</a>
+                <a href="#" class="btn post__btn">Отмена</a>
+              </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--main">
       <div class="page-footer__wrapper">
         <div class="page-footer__name">
           <a href="/" class="page-footer__logo">Pink</a>
@@ -177,10 +201,26 @@
           <a class="social-link social-link--yt" href="#">Мы на Youtube</a>
         </div>
         <div class="page-footer__copyright">
-          Разработано
+          <div class="page-footer__copyright-text">Разработано</div>
           <a href="#" class="page-footer__copyright-link">HTML Academy</a>
         </div>
       </div>
     </footer>
+    <script>
+    var navMain = document.querySelector('.page-header');
+    var navToggle = document.querySelector('.page-header__toggle');
+
+    navMain.classList.remove('page-header--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('page-header--closed')) {
+        navMain.classList.remove('page-header--closed');
+        navMain.classList.add('page-header--opened');
+      } else {
+        navMain.classList.add('page-header--closed');
+        navMain.classList.remove('page-header--opened');
+      }
+    });
+    </script>
   </body>
 </html>
