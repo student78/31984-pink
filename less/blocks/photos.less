@@ -124,30 +124,30 @@
   font-size:10px;
 }
 .photo__likes{
-  position:relative;
-  padding-left:30px;
   font-size:10px;
   text-transform:uppercase;
   color:@pink;
-  border:1px solid red;
   margin-top:auto;
+  display:flex;
+  flex-direction:row;
 
 
   @media @tablet-widths{
     padding-left:0;
+    flex-direction:row-reverse;
+    justify-content:space-between;
   }
 }
-.photo__popularity::before{
-  content:"";
-  position:absolute;
+.photo__heart{
   width:15px;
   height:15px;
   background-image:url("../img/icon-heart.svg");
   background-position:50% 50%;
   background-repeat:no-repeat;
-  left:0;
+  margin-right:10px;
 
   @media @tablet-widths{
-    right:10px;
+    margin-right:0;
+
   }
 }

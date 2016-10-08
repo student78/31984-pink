@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,600&amp;subset=latin,cyrillic">
     <title>Форма Pink</title>
@@ -26,12 +27,13 @@
     <main>
       <section class="page-title page-title--inner">
           <div class="page-title__wrapper page-title__wrapper--inner">
-            <h1 class="page-title__slogan page-title__slogan--inner">Фотографии <br>пользователей</h1>
+            <h1 class="page-title__slogan page-title__slogan--inner">Конкурс на самое безбашенное путешествие с Пинк</h1>
           </div>
         </section>
       <section class="form">
         <div class="form__slogan">
-          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+          <div class="form__wrapper">
+          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! <span class="form__slogan--empty">Пожалуйста, заполните форму ниже.</span></div>
         </div>
       <form class="form__page-form">
         <div class="form__block form__block--name">
@@ -93,20 +95,22 @@
           <div class="form__wrapper">
             <fieldset class="form__fieldset">
               <legend class="form__title form__title--empty">Контактная информация</legend>
-              <div class="form__item form__item--email">
-              <label class="form__title form__title--email" for="tel">Номерок телефончика</label>
-              <input type="tel" class="form__input form__input--email" name="tel" id="tel" placeholder="Номер, пожалуйста">
-              </div>
-              <div class="form__item form__item--email">
-              <label class="form__title form__title--email" for="tel" for="email">Адресок почты</label>
-              <input type="text" class="form__input form__input--email" name="email" id="email" placeholder="Введите почту">
+              <div class="form__items form__items--email">
+                <div class="form__item form__item--email">
+                  <label class="form__title form__title--email" for="tel">Номер телефона</label>
+                  <input type="tel" class="form__input form__input--email" name="tel" id="tel" placeholder="Номер, пожалуйста">
+                </div>
+                <div class="form__item form__item--email">
+                  <label class="form__title form__title--email" for="tel" for="email">Адрес почты</label>
+                  <input type="text" class="form__input form__input--email" name="email" id="email" placeholder="Введите почту">
+                </div>
               </div>
             </fieldset>
           </div>
         </div>
         <div class="form__block form__block--radio">
           <div class="form__wrapper">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--radio">
               <legend class="form__title form__title--radio">С каким приложением путешествовали?</legend>
               <input type="radio" class="from__input form__input--radio" checked id="radio-1">
               <label class="form__label form__label--radio" for="radio-1">Pink для iOS</label>

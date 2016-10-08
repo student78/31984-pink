@@ -2,6 +2,10 @@
   background-color:@bg-lightgrey;
   padding-top:15px;
   padding-bottom:20px;
+
+  @media @tablet-widths{
+    padding:55px 0;
+  }
 }
 .post__wrapper{
   .container();
@@ -12,6 +16,11 @@
     justify-content:space-between;
   }
 }
+
+.post__image{
+  margin:0 auto;
+  text-align:center;
+}
 .post__block{
   border-bottom:2px solid @bg-darkgrey;
 }
@@ -20,11 +29,19 @@
 
   @media @tablet-widths{
     display:flex;
+    justify-content:space-between;
   }
 }
 
 .post__btns{
-  flex-grow:1;
+
+  @media @tablet-widths{
+    width:100%;
+    margin-left:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
 }
 .post__functions{
   margin-top:32px;
@@ -36,6 +53,8 @@
     margin-bottom:0;
     display:flex;
     flex-direction:column;
+    justify-content:space-between;
+    border:1px solid red;
   }
 }
 
@@ -45,12 +64,14 @@
   width:50px;
   height:55px;
   margin-right:27px;
+  margin-bottom:10px;
+  margin-top:10px;
   border:none;
   background-color:@bg-lightgrey;
 
   @media @tablet-widths{
-    display:block;
-    display:table-cell;
+    margin-right:0;
+    border-bottom:2px solid @bg-darkgrey;
   }
 }
 .post__function:first-child{
@@ -77,6 +98,7 @@
     flex-direction:column;
     justify-content:space-around;
     flex-grow:1;
+    border:1px solid red;
   }
 }
 
@@ -85,7 +107,24 @@
   margin-bottom:32px;
 
   @media @tablet-widths{
-    display:table-cell;
+    margin-bottom:0;
+    border-bottom:2px solid @bg-darkgrey;
+  }
+
+  &--2{
+    display:none;
+
+    @media @tablet-widths{
+      display:block;
+    }
+  }
+
+  &--3{
+    display:none;
+
+    @media @tablet-widths{
+      display:block;
+    }
   }
 }
 .post__scale{
@@ -96,13 +135,24 @@
 .post__toggle{
   position:absolute;
   top:-4px;
-  left:80%;
   width:7px;
   height:7px;
   border:2px solid @pink;
   background:@bg-lightgrey;
   cursor:pointer;
   border-radius:50%;
+
+  &--1{
+    left:80%;
+  }
+
+  &--2{
+    left:20%;
+  }
+
+  &--3{
+    left:50%;
+  }
 }
 
 .post__btn{
@@ -116,9 +166,21 @@
   color:@bg-darkgrey;
   border:3px solid @bg-darkgrey;
   margin-bottom:10px;
+
+  @media @desktop-widths{
+    width:40.8%;
+  }
 }
 .post__btn--active{
   color:@pink;
   border:3px solid @pink;
 }
 
+.post__buttons{
+
+  @media @desktop-widths{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
+}
