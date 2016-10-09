@@ -29,7 +29,7 @@
 
 .page-header__logo a{
   float:left;
-  width:74px;
+  width:150px;
   height:30px;
   background-image:url("../img/logo-pink-white-mobile.svg");
   background-repeat:no-repeat;
@@ -37,6 +37,29 @@
   font-size:0;
   cursor:pointer;
   border:1px solid blue;
+
+  @media @tablet-widths{
+    height:46px;
+    background-image:url("../img/logo-pink-white-tablet.svg");
+  }
+
+  @media @desktop-widths{
+    background-image:url("../img/logo-pink-white-desktop.svg");
+
+  }
+}
+
+.page-header__logo a:hover{
+  background-image:url("../img/logo-pink-blue-mobile.svg");
+  background-size: 70px 30px;
+
+  @media @tablet-widths{
+    background-image:url("../img/logo-pink-blue-tablet.svg");
+  }
+
+  @media @desktop-widths{
+    background-image:url("../img/logo-pink-blue-desktop.svg");
+  }
 }
 
 .page-header__toggle{
