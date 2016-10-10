@@ -3,22 +3,44 @@
   height:50px;
   border-radius:50%;
   font-size:0;
-  border:3px solid @bg-lightgrey;
+  border:3px solid @bg-darkgrey;
   margin-right:10px;
+
+  &:hover{
+    border-color:@bg-darkblue;
+  }
+
+  &:active{
+    opacity:0.3;
+    border-color:@bg-darkgrey;
+  }
+
 }
 .social-link--tw{
   background-image:url("../img/icon-twitter.svg");
   background-repeat:no-repeat;
   background-position:50% 50%;
+
+  &:active{
+    opacity:0.3;
+  }
 }
 .social-link--fb{
   background-image:url("../img/icon-facebook.svg");
   background-repeat:no-repeat;
   background-position:50% 50%;
+
+  &:active{
+    opacity:0.3;
+  }
 }
 .social-link--yt{
   background-image:url("../img/icon-youtube.svg");
   background-repeat:no-repeat;
   background-position:50% 50%;
   margin-right:0;
+
+  &:active{
+    opacity:0.3;
+  }
 }

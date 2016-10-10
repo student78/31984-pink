@@ -171,6 +171,17 @@ form{
   line-height:30px;
   color:@bg-darkblue;
 
+  &[type="text"]:hover,
+  &[type="tel"]:hover,
+  &[type="checkbox"]:hover{
+    border-color:@bg-darkblue;
+  }
+
+  &[type="text"]:focus,
+  &[type="tel"]:focus{
+    border-color:@pink;
+  }
+
   &--name{
     @media @tablet-widths{
       margin-left:24px;
@@ -337,6 +348,10 @@ form{
     border:2px solid @bg-darkgrey;
     border-radius:50%;
     background-color:@white;
+
+    &::hover{
+      border-color:@bg-darkblue;
+    }
   }
 
   &--advantages::before{
@@ -369,8 +384,9 @@ form{
     width: 26px;
     height: 20px;
     content: "";
-    background: url("../img/icon-yes.svg") 0 0 no-repeat;
+    background: url("../img/icon-yes-pink.svg") 0 0 no-repeat;
 }
+
 
 .form__btn{
   display:inline-block;
@@ -380,7 +396,7 @@ form{
   font-weight:bold;
   text-align:center;
   border-radius:50px;
-  background-color:#2aab6d;
+  background-color:@green;
   color:@white;
   border:none;
   width:100%;
@@ -391,6 +407,14 @@ form{
 
   @media @tablet-widths{
     width:48.1%;
+  }
+
+  &:hover{
+    background-color:@darkgreen;
+  }
+
+  &:active{
+    opacity:0.3;
   }
 }
 

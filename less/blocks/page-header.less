@@ -50,15 +50,27 @@
 }
 
 .page-header__logo a:hover{
-  background-image:url("../img/logo-pink-blue-mobile.svg");
-  background-size: 70px 30px;
+  background-image:url("../img/logo-pink-white-mobile-hover.svg");
 
   @media @tablet-widths{
-    background-image:url("../img/logo-pink-blue-tablet.svg");
+    background-image:url("../img/logo-pink-white-tablet-hover.svg");
   }
 
   @media @desktop-widths{
-    background-image:url("../img/logo-pink-blue-desktop.svg");
+    background-image:url("../img/logo-pink-white-desktop-hover.svg");
+  }
+}
+
+.page-header__logo a:active{
+  background-image:url("../img/logo-pink-white-mobile.svg");
+  opacity:0.3;
+
+  @media @tablet-widths{
+    background-image:url("../img/logo-pink-white-tablet.svg");
+  }
+
+  @media @desktop-widths{
+    background-image:url("../img/logo-pink-white-desktop.svg");
   }
 }
 
@@ -102,10 +114,18 @@
 
   .page-header--opened .page-header__toggle{
     background-image:url(../img/icon-menu-cross.svg);
+
+    &:hover{
+      background-image:url(../img/icon-menu-cross-hover.svg);
+    }
   }
 
   .page-header--closed .page-header__toggle{
     background-image:url(../img/icon-menu-burger.svg);
+
+    &:hover{
+      background-image:url(../img/icon-menu-burger-hover.svg);
+    }
   }
 
   .page-header--nojs .page-header__toggle{
