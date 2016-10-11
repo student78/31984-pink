@@ -207,10 +207,17 @@ form{
 
   &--email{
     @media @tablet-widths{
-      background-color:@bg-darkgrey;
-      background-size:10%;
-      background-position:90%;
-      margin-bottom:9px;
+      margin-bottom:12px;
+      background: url(../img/icon-mail.svg) calc(100% - 5px) center no-repeat,
+      linear-gradient(to right, white, white calc(100% - 15px), #e5e5e5 calc(100% - 15px));
+    }
+  }
+
+  &--tel{
+    @media @tablet-widths{
+      margin-bottom:12px;
+      background: url(../img/icon-phone.svg) calc(100% - 5px) center no-repeat,
+      linear-gradient(to right, white, white calc(100% - 15px), #e5e5e5 calc(100% - 15px));
     }
   }
 }
@@ -348,10 +355,6 @@ form{
     border:2px solid @bg-darkgrey;
     border-radius:50%;
     background-color:@white;
-
-    &::hover{
-      border-color:@bg-darkblue;
-    }
   }
 
   &--advantages::before{
@@ -414,7 +417,8 @@ form{
   }
 
   &:active{
-    opacity:0.3;
+    color: rgba(255, 255, 255, 0.3);
+    background-color:@darkgreen;
   }
 }
 
@@ -433,3 +437,7 @@ form{
 .form__mark{
   color:@pink;
 }
+
+.form__label--radio::hover::before{
+      border-color:red;
+    }

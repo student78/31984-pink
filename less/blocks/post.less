@@ -171,10 +171,34 @@
   @media @desktop-widths{
     width:40.8%;
   }
+
 }
 .post__btn--active{
   color:@pink;
   border:3px solid @pink;
+
+  &:hover{
+    color:@white;
+    background-color:@pink;
+  }
+
+  &:active{
+    background-color:@pink;
+    color:rgba(255, 255, 255, 0.3);
+  }
+}
+
+.post__btn--cancel{
+
+  &:hover{
+    color:#b5b9be;
+    border-color:#b5b9be;
+  }
+
+  &:active{
+    background-color:#b5b9be;
+    color:rgba(255, 255, 255, .3);;
+  }
 }
 
 .post__buttons{
